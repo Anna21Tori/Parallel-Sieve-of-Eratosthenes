@@ -1,7 +1,7 @@
 # Set up
     sudo apt install mipch
 
-# sequential 
+# Sequential 
     run OpenMP version (set only 1 thread)
 
 # OpenMP
