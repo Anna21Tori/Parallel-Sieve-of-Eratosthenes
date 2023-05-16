@@ -29,7 +29,6 @@ void pre_marked_primes(long int *num_factors, long int *num_primes, long int *A,
             A[(*num_factors)++] = i; 
 
             /* Multiples of prime should not be marked*/
-            #pragma omp parallel for default(none) shared(a) firstprivate(i) schedule(dynamic)
             for (k = i + i; k <= S; k += i){
                 a[k] = 0;
             } 
